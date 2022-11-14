@@ -2,10 +2,10 @@
 @import './example';
 
 .search-form {
-  background-color: rgb(141, 160, 209);
-height: 30px;
-display: flex;
+  // height: 30px;
+  display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 .btn {
   border: none;
@@ -47,4 +47,8 @@ img {
 }
 .info-item b {
   color: rgb(90, 80, 229);
+}
+.wrapper {
+  height: 60px;
+  background-color: rgb(141, 160, 209);
 }
