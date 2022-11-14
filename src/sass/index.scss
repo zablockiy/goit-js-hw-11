@@ -1,2 +1,50 @@
 @import './common';
 @import './example';
+
+.search-form {
+  background-color: rgb(141, 160, 209);
+height: 30px;
+display: flex;
+  justify-content: center;
+}
+.btn {
+  border: none;
+  font-size: small;
+}
+.search-form input {
+  border: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 5);
+  width: 300;
+  margin: 5px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.info {
+  display: flex;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.info-item {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 7px;
+}
+.info-item b {
+  color: rgb(90, 80, 229);
+}
