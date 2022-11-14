@@ -8,15 +8,12 @@ const refs = {
   input: document.querySelector('input'),
   form: document.querySelector('.search-form'),
   gallery: document.querySelector('.gallery'),
-  
-};
+  };
 
 refs.form.addEventListener('submit', onFormSubmit);
 refs.gallery.addEventListener('click', e => e.preventDefault());
 
-
 let page = 1;
-
 
 function onFormSubmit(e) {
   e.preventDefault();
