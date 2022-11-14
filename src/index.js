@@ -59,4 +59,4 @@ const observer = new IntersectionObserver((entries, observer) => {
       });
     }
   });
-});
+}, {threshold: 1});
