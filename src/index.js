@@ -53,12 +53,6 @@ const observer = new IntersectionObserver((entries, observer) => {
       page += 1;
     const value = refs.input.value;
       getData(value, page).then(data => {
-        if (data.data.hits.length === 0) {
-          Notiflix.Notify.warning(
-            'Вибачте, але ви досягли кінця результатів пошуку.'
-          );
-          return;
-        }
        createMarkup(data.data.hits, refs.gallery);
        lightbox.refresh();
        observer.observe(refs.gallery.lastElementChild);
